@@ -1,0 +1,26 @@
+version: '3.3'
+services:
+    db:
+        container_name: dental-mysql
+        image: mysql:5.7
+        restart: always
+        environment:
+            MYSQL_DATABASE: dental
+            MYSQL_USER: user
+            MYSQL_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: password
+        ports:
+            - "3306:3306"
+        volumes:
+            - ./mysql/conf.d:/etc/mysql/conf.d
+    redis:
+        container_name: dental-redis
+        image: redis:latest
+        ports:
+            - "6379:6379"
+    localstack:
+        container_name: dental-aws
+        image: localstack/localstack
+        ports:
+          - 4567-4578:4567-4578
+          - 8080:8080

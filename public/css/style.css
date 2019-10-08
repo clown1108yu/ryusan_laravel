@@ -1,0 +1,26 @@
+.btn-app {
+    border-radius: 3px;
+    position: relative;
+    padding: 15px 5px;
+    margin: 0 0 10px 10px;
+    min-width: 140px;
+    height: 100px;
+    text-align: center;
+    color: #666;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    font-size: 16px;
+}
+
+.btn-creating {
+    border: 1px solid #FF0000;
+    color: #FF0000;
+}
+
+.btn-creating.disabled.focus, .btn-creating.disabled:focus, .btn-creating.disabled:hover, .btn-creating[disabled].focus, .btn-creating[disabled]:focus, .btn-creating[disabled]:hover, fieldset[disabled] .btn-creating.focus, fieldset[disabled] .btn-creating:focus, fieldset[disabled] .btn-creating:hover,
+.btn-creating.active, .btn-creating:active, .btn-creating:hover, .open>.btn-creating.dropdown-toggle {
+    border: 1px solid #FF0000;
+    color: #FF0000;
+    background-color: #FFFFFF;
+    border-color: #FF0000;
+}
